@@ -1,10 +1,288 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-        <title>我的个人网站</title>
-    </head>
-    <body>
-        <p>Hello</p>
-    </body>
-</html>
+import React from 'react';
+import cn from 'classnames';
+
+import section1Styles from './UntitledPage_section1.module.scss';
+import section2Styles from './UntitledPage_section2.module.scss';
+import section3Styles from './UntitledPage_section3.module.scss';
+import section4Styles from './UntitledPage_section4.module.scss';
+import section5Styles from './UntitledPage_section5.module.scss';
+import styles from './UntitledPage.module.scss';
+
+function renderSection1(props) {
+  return (
+    <section className={section1Styles.section1}>
+      <div className={section1Styles.flexCol}>
+        <div className={section1Styles.info}>Home</div>
+        <h5 className={section1Styles.highlights}>apps</h5>
+        <div className={section1Styles.info1}>Get started</div>
+        <h5 className={section1Styles.highlights1}>code</h5>
+        <div className={section1Styles.info11}>Develop</div>
+        <h5 className={section1Styles.highlights1}>book</h5>
+      </div>
+
+      <div
+        style={{ '--src': `url(${require('assets/3f3b6349df306794310b03f58a4808f7.png')})` }}
+        className={section1Styles.content_box1}>
+        <div className={section1Styles.flexCol1}>
+          <h1 className={section1Styles.hero_title}>Material Design</h1>
+          <h3 className={section1Styles.subtitle}>
+            Material 3 is the latest version of Google’s open-source design system. Design and build beautiful, usable
+            products with Material 3.
+          </h3>
+
+          <div className={section1Styles.content_box}>
+            <h2 className={section1Styles.medium_title}>Get started</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function renderSection2(props) {
+  return (
+    <section className={section2Styles.section2}>
+      /*This group structure is not ready for flow layout, please resolve the ❗alone items in pxCode editor.*/
+      <img
+        src={require('assets/d8a9b04ac86c10696590951fb4a51702.png')}
+        alt="alt text"
+        className={section2Styles.image1}
+      />
+      <img
+        src={require('assets/96d25c894cd03b541b4e419ede1b2932.png')}
+        alt="alt text"
+        className={section2Styles.image11}
+      />
+      <img
+        src={require('assets/9eae3a31d7414aa17254dee9cf642a02.png')}
+        alt="alt text"
+        className={section2Styles.image12}
+      />
+      <px-grid x="428px 444fr 1048fr" y="92px minmax(0px, max-content) 480fr" absolute>
+        <h1 className={section2Styles.hero_title1}>{'News & launches'}</h1>
+      </px-grid>
+      <px-grid x="428px 303fr 1189fr" y="432px minmax(0px, max-content) 172fr" absolute>
+        <h2 className={section2Styles.medium_title1}>Android Developer Summit</h2>
+      </px-grid>
+      <px-grid x="428px 321fr 1171fr" y="474px minmax(0px, max-content) 114fr" absolute>
+        <h5 className={section2Styles.highlights1}>
+          Catch Material updates and tutorials at ADS 2022, beginning October 24
+        </h5>
+      </px-grid>
+      <px-grid x="831px 269fr 820fr" y="408px minmax(0px, max-content) 196fr" absolute>
+        <h2 className={section2Styles.medium_title1}>Announcing Relay Alpha</h2>
+      </px-grid>
+      <px-grid x="831px 325fr 764fr" y="450px minmax(0px, max-content) 114fr" absolute>
+        <h5 className={section2Styles.highlights1}>
+          Relay streamlines design and development of custom components through Figma and Android Studio
+        </h5>
+      </px-grid>
+      <px-grid x="1233px 323fr 364fr" y="432px minmax(0px, max-content) 172fr" absolute>
+        <h2 className={section2Styles.medium_title1}>New: Figma design kit for M3</h2>
+      </px-grid>
+      <px-grid x="1233px 337fr 350fr" y="474px minmax(0px, max-content) 114fr" absolute>
+        <h5 className={section2Styles.highlights1}>
+          Jumpstart your designs with customizable, ready-made M3 components available in Figma
+        </h5>
+      </px-grid>
+    </section>
+  );
+}
+
+function renderSection3(props) {
+  return (
+    <section className={section3Styles.section3}>
+      /*This group structure is not ready for flow layout, please resolve the ❗alone items in pxCode editor.*/
+      <img
+        src={require('assets/126e02ee544d4b6074edf701ca9a32a0.png')}
+        alt="alt text"
+        className={section3Styles.image1}
+      />
+      <img
+        src={require('assets/50a805705ce18d3ae59f18f222802675.png')}
+        alt="alt text"
+        className={section3Styles.image11}
+      />
+      <img
+        src={require('assets/329d53efefdc35f3c1cc691161368a79.png')}
+        alt="alt text"
+        className={section3Styles.image12}
+      />
+      <img
+        src={require('assets/6dde9a8ea28a7cd45f8f67644981255e.png')}
+        alt="alt text"
+        className={section3Styles.image13}
+      />
+      <img
+        src={require('assets/2f0880d05bfc466cfd3a2b644a282c22.png')}
+        alt="alt text"
+        className={section3Styles.image14}
+      />
+      <img
+        src={require('assets/087adf2e63d349b44d63faf7fd45b5b7.png')}
+        alt="alt text"
+        className={section3Styles.image15}
+      />
+      <px-grid x="428px 614fr 878fr" y="0px minmax(0px, max-content) 800fr" absolute>
+        <h1 className={section3Styles.hero_title1}>Design system updates</h1>
+      </px-grid>
+      <px-grid x="428px 264fr 1228fr" y="316px minmax(0px, max-content) 516fr" absolute>
+        <h2 className={section3Styles.medium_title1}>Motion system updates</h2>
+      </px-grid>
+      <px-grid x="428px 323fr 1169fr" y="358px minmax(0px, max-content) 458fr" absolute>
+        <h5 className={section3Styles.highlights1}>
+          Get started applying motion, from ready-to-use transition patterns to updated guidance
+        </h5>
+      </px-grid>
+      <px-grid x="831px 313fr 776fr" y="316px minmax(0px, max-content) 516fr" absolute>
+        <h2 className={section3Styles.medium_title1}>{'Designing depth & elevation'}</h2>
+      </px-grid>
+      <px-grid x="831px 305fr 784fr" y="358px minmax(0px, max-content) 458fr" absolute>
+        <h5 className={section3Styles.highlights1}>
+          Learn how to design and build more usable interfaces with visual cues for elevation
+        </h5>
+      </px-grid>
+      <px-grid x="1233px 209fr 478fr" y="316px minmax(0px, max-content) 516fr" absolute>
+        <h2 className={section3Styles.medium_title1}>Accessibility specs</h2>
+      </px-grid>
+      <px-grid x="1233px 324fr 363fr" y="358px minmax(0px, max-content) 458fr" absolute>
+        <h5 className={section3Styles.highlights1}>Understand and apply accessibility standards built into Material</h5>
+      </px-grid>
+      <px-grid x="428px 259fr 1233fr" y="660px minmax(0px, max-content) 172fr" absolute>
+        <h2 className={section3Styles.medium_title1}>Material Theme Builder</h2>
+      </px-grid>
+      <px-grid x="428px 340fr 1152fr" y="702px minmax(0px, max-content) 114fr" absolute>
+        <h5 className={section3Styles.highlights1}>
+          Easily migrate or get started with the M3 color system and dynamic color
+        </h5>
+      </px-grid>
+      <px-grid x="831px 259fr 830fr" y="660px minmax(0px, max-content) 172fr" absolute>
+        <h2 className={section3Styles.medium_title1}>List component update</h2>
+      </px-grid>
+      <px-grid x="831px 301fr 788fr" y="702px minmax(0px, max-content) 114fr" absolute>
+        <h5 className={section3Styles.highlights1}>
+          Standardized sizing and new configuration options included in updates
+        </h5>
+      </px-grid>
+      <px-grid x="1233px 290fr 397fr" y="660px minmax(0px, max-content) 172fr" absolute>
+        <h2 className={section3Styles.medium_title1}>Progress indicator update</h2>
+      </px-grid>
+      <px-grid x="1233px 303fr 384fr" y="702px minmax(0px, max-content) 114fr" absolute>
+        <h5 className={section3Styles.highlights1}>New color mappings and motion examples included in updates</h5>
+      </px-grid>
+    </section>
+  );
+}
+
+function renderSection4(props) {
+  return (
+    <section className={section4Styles.section4}>
+      /*This group structure is not ready for flow layout, please resolve the ❗alone items in pxCode editor.*/
+      <px-grid x="428px 275fr 1217fr" y="0px minmax(0px, max-content) 449fr" absolute>
+        <h1 className={section4Styles.hero_title1}>Resources</h1>
+      </px-grid>
+      <px-grid x="428px 148fr 1344fr" y="116px minmax(0px, max-content) 365fr" absolute>
+        <h2 className={section4Styles.medium_title1}>Material blog</h2>
+      </px-grid>
+      <px-grid x="428px 395fr 1097fr" y="156px minmax(0px, max-content) 333fr" absolute>
+        <h5 className={section4Styles.highlights1}>News, tutorials, and inspiration from the Material team</h5>
+      </px-grid>
+      <px-grid x="1032px 182fr 706fr" y="116px minmax(0px, max-content) 365fr" absolute>
+        <h2 className={section4Styles.medium_title1}>Figma design kit</h2>
+      </px-grid>
+      <px-grid x="1032px 516fr 372fr" y="156px minmax(0px, max-content) 333fr" absolute>
+        <h5 className={section4Styles.highlights1}>
+          Customizable styles and components to help you design with Material 3
+        </h5>
+      </px-grid>
+      <px-grid x="428px 130fr 1362fr" y="236px minmax(0px, max-content) 245fr" absolute>
+        <h2 className={section4Styles.medium_title1}>Get started</h2>
+      </px-grid>
+      <px-grid x="428px 395fr 1097fr" y="276px minmax(0px, max-content) 213fr" absolute>
+        <h5 className={section4Styles.highlights1}>Guides, videos, and tools to start building with Material</h5>
+      </px-grid>
+      <px-grid x="1032px 93fr 795fr" y="236px minmax(0px, max-content) 245fr" absolute>
+        <h2 className={section4Styles.medium_title1}>Develop</h2>
+      </px-grid>
+      <px-grid x="1032px 496fr 392fr" y="276px minmax(0px, max-content) 213fr" absolute>
+        <h5 className={section4Styles.highlights1}>
+          Code and developer documentation for Android, Flutter, and the Web
+        </h5>
+      </px-grid>
+    </section>
+  );
+}
+
+function renderSection5(props) {
+  return (
+    <section className={section5Styles.section5}>
+      /*This group structure is not ready for flow layout, please resolve the ❗alone items in pxCode editor.*/
+      <img
+        src={require('assets/84f3c096a6054114d78f2b2ab749a6f2.png')}
+        alt="alt text"
+        className={section5Styles.image2}
+      />
+      <h2 className={section5Styles.medium_title2}>material_design</h2>
+      <px-grid x="404px 483fr 1033fr" y="71px minmax(0px, max-content) 190fr" absolute>
+        <h5 className={section5Styles.highlights1}>
+          Material Design is an adaptable system of guidelines, components, and tools that support the best practices of
+          user interface design. Backed by open-source code, Material Design streamlines collaboration between designers
+          and developers, and helps teams quickly build beautiful products.
+        </h5>
+      </px-grid>
+      <px-grid x="994px 42fr 884fr" y="27px minmax(0px, max-content) 334fr" absolute>
+        <div className={section5Styles.text}>Social</div>
+      </px-grid>
+      <px-grid x="995px 53fr 872fr" y="68px minmax(0px, max-content) 289fr" absolute>
+        <h5 className={section5Styles.highlights2}>GitHub</h5>
+      </px-grid>
+      <px-grid x="995px 54fr 871fr" y="114px minmax(0px, max-content) 243fr" absolute>
+        <h5 className={section5Styles.highlights2}>Twitter</h5>
+      </px-grid>
+      <px-grid x="995px 66fr 859fr" y="160px minmax(0px, max-content) 197fr" absolute>
+        <h5 className={section5Styles.highlights2}>YouTube</h5>
+      </px-grid>
+      <px-grid x="995px 68fr 857fr" y="206px minmax(0px, max-content) 151fr" absolute>
+        <h5 className={section5Styles.highlights2}>Blog RSS</h5>
+      </px-grid>
+      <px-grid x="1204px 62fr 654fr" y="27px minmax(0px, max-content) 334fr" absolute>
+        <div className={section5Styles.text}>Libraries</div>
+      </px-grid>
+      <px-grid x="1205px 60fr 655fr" y="68px minmax(0px, max-content) 289fr" absolute>
+        <h5 className={section5Styles.highlights2}>Android</h5>
+      </px-grid>
+      <px-grid x="1205px 74fr 641fr" y="114px minmax(0px, max-content) 243fr" absolute>
+        <h5 className={section5Styles.highlights2}>Compose</h5>
+      </px-grid>
+      <px-grid x="1205px 50fr 665fr" y="160px minmax(0px, max-content) 197fr" absolute>
+        <h5 className={section5Styles.highlights2}>Flutter</h5>
+      </px-grid>
+      <px-grid x="1205px 34fr 681fr" y="206px minmax(0px, max-content) 151fr" absolute>
+        <h5 className={section5Styles.highlights2}>Web</h5>
+      </px-grid>
+      <px-grid x="1414px 125fr 381fr" y="27px minmax(0px, max-content) 334fr" absolute>
+        <div className={section5Styles.text}>Archived versions</div>
+      </px-grid>
+      <px-grid x="1415px 128fr 377fr" y="68px minmax(0px, max-content) 289fr" absolute>
+        <h5 className={section5Styles.highlights2}>Material Design 1</h5>
+      </px-grid>
+      <px-grid x="1415px 131fr 374fr" y="114px minmax(0px, max-content) 243fr" absolute>
+        <h5 className={section5Styles.highlights2}>Material Design 2</h5>
+      </px-grid>
+    </section>
+  );
+}
+
+export default function UntitledPage(props) {
+  return (
+    <main className={cn(styles.main, 'untitled-page')}>
+      <div className={styles.main__cell}>{renderSection1(props)}</div>
+      <div className={styles.main__cell}>{renderSection2(props)}</div>
+      <div className={styles.main__cell}>{renderSection3(props)}</div>
+      <div className={styles.main__cell}>{renderSection4(props)}</div>
+      <div className={styles.main__cell}>{renderSection5(props)}</div>
+    </main>
+  );
+}
+
+UntitledPage.inStorybook = true;
